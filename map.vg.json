@@ -17,7 +17,7 @@
     "layer": [
         {
             "data": {
-                "url": "https://raw.githubusercontent.com/itsgeegeez/fit3179-week9/malaysia.parlimen.topojson",
+                "url": "./malaysia.parlimen.topojson",
                 "format": { "feature": "malaysia.parlimen" }
             },
             "mark": {
@@ -29,14 +29,14 @@
         },
         {
             "data": {
-                "url": "https://raw.githubusercontent.com/itsgeegeez/fit3179-week9/candidates_ge15.csv"
+                "url": "./candidates_ge15.csv"
             },
             "transform": [
                 {
                     "lookup": "parlimen",
                     "from": {
                         "data": {
-                            "url": "https://raw.githubusercontent.com/itsgeegeez/fit3179-week9/malaysia.parlimen.topojson",
+                            "url": "./malaysia.parlimen.topojson",
                             "format": { "feature": "malaysia.parlimen" }
                         },
                         "key": "properties.parlimen",
@@ -47,7 +47,7 @@
                     "lookup": "parlimen",
                     "from": {
                         "data": {
-                            "url": "https://raw.githubusercontent.com/itsgeegeez/fit3179-week9/census_parlimen.csv"
+                            "url": "./census_parlimen.csv"
                         },
                         "key": "parlimen",
                         "fields": ["state"]
