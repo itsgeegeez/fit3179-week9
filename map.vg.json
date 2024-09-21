@@ -17,18 +17,6 @@
     "layer": [
         {
             "data": {
-                "url": "https://raw.githubusercontent.com/itsgeegeez/fit3179-week9/main/malaysia.parlimen.topojson",
-                "format": { "feature": "malaysia.parlimen" }
-            },
-            "mark": {
-                "type": "geoshape",
-                "stroke": "black",
-                "fill": "lightgray",
-                "strokeWidth": 0.5
-            }
-        },
-        {
-            "data": {
                 "url": "https://raw.githubusercontent.com/itsgeegeez/fit3179-week9/main/candidates_ge15.csv"
             },
             "transform": [
@@ -100,6 +88,13 @@
                     { "field": "votes", "type": "quantitative", "title": "Votes" }
                 ]
             }
+        },
+        {
+            "data": {
+                "url": "https://raw.githubusercontent.com/itsgeegeez/fit3179-week9/main/malaysia.parlimen.topojson",
+                "format": { "feature": "ne_10m_graticules_1" }
+            },
+            "mark": { "type": "geoshape", "stroke": "lightgray", "strokeWidth": 0.5, "fill": null }
         }
     ]
 }
