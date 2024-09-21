@@ -43,7 +43,7 @@
                 },
                 { "filter": "datum.result_desc == 'won'" },
                 {
-                    "calculate": "indexof(['PERIKATAN NASIONAL (PN)', 'BARISAN NASIONAL (BN)', 'PAKATAN HARAPAN (PH)', 'PARTI GABUNGAN RAKYAT SABAH (GRS)', 'GABUNGAN PARTI SARAWAK (GPS)', 'PARTI TINDAKAN DEMOKRATIK (DAP)', 'PARTI BERSATU RAKYAT SABAH (PBRS)', 'PARTI ISLAM SE MALAYSIA (PAS)'], datum.party) > -1 ? datum.party : 'Others'",
+                    "calculate": "indexof(['PERIKATAN NASIONAL (PN)', 'BARISAN NASIONAL (BN)', 'PAKATAN HARAPAN (PH)', 'PARTI GABUNGAN RAKYAT SABAH (GRS)', 'GABUNGAN PARTI SARAWAK (GPS)', 'PARTI TINDAKAN DEMOKRATIK (DAP)', 'PARTI BERSATU RAKYAT SABAH (PBRS)', 'PARTI ISLAM SE MALAYSIA (PAS)'], datum.party) > -1 ? datum.party : 'OTHERS'",
                     "as": "party_category"
                 }
             ],
@@ -63,7 +63,7 @@
                             "IKATAN DEMOKRATIK MALAYSIA (MUDA)",
                             "PARTI BERSATU RAKYAT SABAH (PBRS)",
                             "PARTI ISLAM SE MALAYSIA (PAS)",
-                            "Others"
+                            "OTHERS"
                         ],
                         "range": [
                             "#f44422",
